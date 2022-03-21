@@ -12,10 +12,6 @@
   --focus-color: #ea005e;
 }
 
-img {
-  max-width: 100%;
-}
-
 ul {
   list-style-type: none;
   margin: 0;
@@ -209,15 +205,16 @@ button:active {
   }
 
   .quiz_content {
+    width: 100%;
     padding: 1rem;
-  }
-
-  .quiz_content ul li {
-    padding-bottom: 0.35rem;
   }
 
   .question {
     font-size: 1rem;
+  }
+
+  .quiz_content ul li {
+    padding-bottom: 0.35rem;
   }
 
   .next_question_button {
