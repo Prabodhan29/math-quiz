@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Bodoni+Moda:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Dancing+Script:wght@400;500;600;700&family=Dongle:wght@300;400;700&family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lobster&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Stylesheet Link -->
+    <link rel="stylesheet" href="styles.css" />
+    <title>Math Quiz</title>
+  </head>
+  <body>
+    <div class="quiz_container">
+      <!-- Start quiz button -->
+      <button class="quiz_start_button quiz-button" type="submit">
+        Click to start quiz
+      </button>
+
+      <!-- Quiz question and answers -->
+      <div class="quiz_content">
+        <!-- Questions -->
+        <h1 class="question">Question text</h1>
+
+        <!-- Options -->
+        <ul>
+          <li>
+            <input
+              type="radio"
+              id="a"
+              name="answer"
+              class="answer"
+              value="a"
+              required
+            />
+            <label for="a" id="optionA"> option A</label>
+          </li>
+          <li>
+            <input
+              type="radio"
+              id="b"
+              name="answer"
+              class="answer"
+              value="b"
+              required
+            />
+            <label for="b" id="optionB"> option B</label>
+          </li>
+          <li>
+            <input
+              type="radio"
+              id="c"
+              name="answer"
+              class="answer"
+              value="c"
+              required
+            />
+            <label for="c" id="optionC"> option C</label>
+          </li>
+          <li>
+            <input
+              type="radio"
+              id="d"
+              name="answer"
+              class="answer"
+              value="d"
+              required
+            />
+            <label for="d" id="optionD"> option D</label>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Next question button -->
+      <button class="next_question_button quiz-button" type="submit">Next question</button>
+    </div>
+
+    <!-- Quiz score -->
+    <div class="score"></div>
+
+    <!-- Start again button -->
+    <button class="start_again quiz-button">Start the quiz again</button>
+
+    <!-- jQuery CDN -->
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <script src="index.js" defer></script>
+  </body>
+</html>
